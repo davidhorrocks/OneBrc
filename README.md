@@ -220,7 +220,7 @@ Potential optimizations to explore when implementing `IWeatherProcessor`:
 
 ## License
 
-This project is available under the Apache License 2.0 (same as the original 1BRC).
+This project is available under the MIT Licence.
 
 ## Acknowledgments
 
