@@ -6,7 +6,8 @@ namespace OneBrc.Tests;
 
 public class WeatherProcessorTests : IDisposable
 {
-    private readonly IWeatherProcessor _processor = new NaiveWeatherProcessor();
+    //private readonly IWeatherProcessor _processor = new NaiveWeatherProcessor();
+    private readonly IWeatherProcessor _processor = new DavidHorrocksV2WeatherProcessor();
     private readonly List<string> _tempFiles = new();
 
     private string CreateTempFile(string content)
