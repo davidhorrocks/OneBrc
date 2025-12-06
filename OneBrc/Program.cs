@@ -74,7 +74,8 @@ static int HandleProcess(string[] args)
     );
     
     var startTime = Stopwatch.GetTimestamp();
-    IWeatherProcessor processor = new NaiveWeatherProcessor();
+    //IWeatherProcessor processor = new NaiveWeatherProcessor();
+    IWeatherProcessor processor = new DavidHorrocksV2WeatherProcessor();
     var results = processor.Process(inputFile).ToList(); // Materialize to capture all allocations
     var elapsed = Stopwatch.GetElapsedTime(startTime);
     
